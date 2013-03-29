@@ -4,8 +4,5 @@ module.exports = {
 	// suffix: '-hd', // for Cocos2d
 	inputPath:  '',
 	outputPath: '',
-	ignore: [
-		'',
-		''
-	]
+	ignore: []
 };
