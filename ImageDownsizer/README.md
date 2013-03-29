@@ -1,0 +1,1 @@
+非Retina Display端末の為のイメージダウンサイズScript
