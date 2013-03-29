@@ -31,7 +31,7 @@ exec('ls ' + config.inputPath, {timeout: 1000}, function(err, stdout, stderr) {
 			var reg = new RegExp( config.suffix+'.png$|' + config.suffix+'.jpg$|' + config.suffix+'.jpeg$|' + config.suffix+'.gif$' );
 			if ( files[i].match(reg) ) {
 
-				var resizedImgName = files[i].replace('@x2', '');
+				var resizedImgName = files[i].replace(config.suffix, '');
 
 				imageMagick.resize({srcPath:config.inputPath + files[i], dstPath:config.inputPath + resizedImgName, width:'50%'}, function(err, stdout, stderr) {
 					if (err) throw err
